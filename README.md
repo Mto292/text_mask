@@ -14,7 +14,7 @@ add this line to pubspec.yaml
 ```yaml
 
    dependencies:
-     text_mask: ^1.0.0
+     text_mask: ^1.0.2
 
 ```
 
@@ -28,7 +28,7 @@ import package
 
 ## Use # for your char in text you want to mask
 
-## TextField mask example:
+## Const text mask example:
 ```dart
   Text(
    'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451312132')}',
