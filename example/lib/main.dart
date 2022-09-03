@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const SizedBox(height: 12),
             Text(
-              'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451316188')}',
+              'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451312132')}',
             ),
             const SizedBox(height: 8),
             Text(
