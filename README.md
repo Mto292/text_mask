@@ -2,6 +2,8 @@
 
 A package for mask textField and const text (eg. Date, phone number, IP address etc.)
 
+![Simulator Screen Shot - iPhone 13 Pro - 2022-09-04 at 01 18 15](https://user-images.githubusercontent.com/49743631/188289249-3512d8d5-0b5f-44cc-b9be-00c4cd7e009c.png)
+
 ## Usage
 
 add this line to pubspec.yaml
@@ -25,7 +27,7 @@ import package
 
 ```dart
   Text(
-   'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451316188')}',
+   'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451312132')}',
   ),
 ```
 
