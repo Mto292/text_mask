@@ -2,7 +2,10 @@
 
 A package for mask textField and const text (eg. Date, phone number, IP address etc.)
 
-![Simulator Screen Shot - iPhone 13 Pro - 2022-09-04 at 01 18 15](https://user-images.githubusercontent.com/49743631/188289249-3512d8d5-0b5f-44cc-b9be-00c4cd7e009c.png)
+
+
+<img src="https://user-images.githubusercontent.com/49743631/188289249-3512d8d5-0b5f-44cc-b9be-00c4cd7e009c.png" width="250" />
+
 
 ## Usage
 
@@ -25,6 +28,7 @@ import package
 
 ## Use # for your char in text you want to mask
 
+## TextField mask example:
 ```dart
   Text(
    'Phone: ${TextMask(pallet: '+90(###) ### ## ##').getMaskedText('5451312132')}',
@@ -32,7 +36,6 @@ import package
 ```
 
 ## TextField Mask Example
-
 ```dart
  TextField(
   keyboardType: TextInputType.phone,
