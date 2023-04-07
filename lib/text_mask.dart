@@ -1,7 +1,7 @@
 library text_mask;
 
-import 'package:flutter/services.dart' show TextInputFormatter, TextEditingValue, TextSelection;
-
+import 'package:flutter/services.dart'
+    show TextInputFormatter, TextEditingValue, TextSelection;
 
 /// Use # for your char in text you want to mask
 ///
@@ -29,7 +29,8 @@ class TextMask extends TextInputFormatter {
   });
 
   @override
-  TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
+  TextEditingValue formatEditUpdate(
+      TextEditingValue oldValue, TextEditingValue newValue) {
     String newTxt = newValue.text;
     String oldText = oldValue.text;
     newTxt = getMaskedText(newTxt, oldText: oldText);
@@ -47,7 +48,9 @@ class TextMask extends TextInputFormatter {
     for (int i = 0; i < pallet.length; i++) {
       if (pallet[i] != '#') {
         if (tempIndex == i - 1) {
-          list.last = {list.last.keys.first: list.last.values.first + pallet[i]};
+          list.last = {
+            list.last.keys.first: list.last.values.first + pallet[i]
+          };
         } else {
           list.add({i - charAddedLength: pallet[i]});
         }
@@ -55,10 +58,12 @@ class TextMask extends TextInputFormatter {
         charAddedLength++;
       }
     }
-    tempIndex =
-        list.indexWhere((element) => (oldText.endsWith(element.values.first) || newTxt.endsWith(element.values.first)));
+    tempIndex = list.indexWhere((element) =>
+        (oldText.endsWith(element.values.first) ||
+            newTxt.endsWith(element.values.first)));
     if (tempIndex != -1 && (oldText.length > newTxt.length)) {
-      newTxt = newTxt.substring(0, newTxt.length - list[tempIndex].values.first.length);
+      newTxt = newTxt.substring(
+          0, newTxt.length - list[tempIndex].values.first.length);
     } else {
       String result = '';
       for (Map<int, String> element in list) {

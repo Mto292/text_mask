@@ -45,7 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Center(
               child: Text(
                 'Mask TextField ',
-                style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -107,7 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Center(
               child: Text(
                 'Mask Const Text',
-                style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),

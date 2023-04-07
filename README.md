@@ -1,3 +1,5 @@
+[<img alt="alt_text" width="240px" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" />](https://www.buymeacoffee.com/mustafahusF)
+
 # text_mask
 
 A package for mask textField and const text (eg. Date, phone number, IP address etc.)
@@ -14,7 +16,7 @@ add this line to pubspec.yaml
 ```yaml
 
    dependencies:
-     text_mask: ^1.0.2
+     text_mask: ^1.0.4
 
 ```
 

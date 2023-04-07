@@ -1,6 +1,6 @@
 name: text_mask
 description: A package for mask textField and const text (eg. Date, phone number, IP address etc.).
-version: 1.0.2
+version: 1.0.4
 homepage: https://github.com/Mto292/text_mask.git
 
 environment:
